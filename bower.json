@@ -5,6 +5,7 @@
     "main": "a11yclick.js",
     "author": "Scott Vinkle",
     "ignore": [
+        ".gitignore",
         "package.json"
     ]
 }
