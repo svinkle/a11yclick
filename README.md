@@ -18,7 +18,6 @@ Add a ```script``` tag at the bottom of the page, before your application logic.
 
 ```html
 <script src="a11yclick.js"></script>
-<!-- Other script files --->
 <script src="app.js"></script>
 ```
 
