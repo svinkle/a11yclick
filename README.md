@@ -1,6 +1,6 @@
 # a11yclick
 
-Quickly and easily handle keyboard click events on non semantic button elements.
+Easily handle keyboard click events on non semantic button elements.
 
 This is a fork from the blog post entitled "[Ridiculously easy trick for keyboard accessibility](http://www.karlgroves.com/2014/11/24/ridiculously-easy-trick-for-keyboard-accessibility/)" by Karl Groves.
 
@@ -16,7 +16,7 @@ bower install --save a11yclick
 
 Add a ```script``` tag at the bottom of the page, before your application logic.
 
-```
+```html
 <script src="a11yclick.js"></script>
 <!-- Other script files --->
 <script src="app.js"></script>
