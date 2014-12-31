@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>a11yclick Example</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+                font-family: sans-serif;
+                margin: 2em;
+            }
+            .fake-button {
+                background-color: #eee;
+                border: solid #ccc 1px;
+                border-radius: 5px;
+                cursor: pointer;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <span class="fake-button" tabindex="0" role="button">Fake Button</span>
+
+        <script src="../a11yclick.js"></script>
+        <script>
+            (function(window, document, undefined) {
+                'use strict';
+
+                // Global object
+                var App = {};
+
+                // Fake button element
+                App.button = document.querySelector('.fake-button');
+
+                // jQuery
+                // App.button = $('.fake-button');
+
+                // Event handler
+                App.handleClick = function(event) {
+                    // Check a11yclick, handle accessibility requirements
+                    if (a11yclick(event)) {
+                        App.doSomething();
+                    }
+                };
+
+                // Event logic
+                App.doSomething = function() {
+                    alert('Clicked!');
+                };
+
+                // Event listeners
+                App.button.addEventListener('click', function(event) {
+                    App.handleClick(event);
+                }, false);
+
+                App.button.addEventListener('keydown', function(event) {
+                    App.handleClick(event);
+                }, false);
+
+                // jQuery
+                // App.button.on('click keydown', function(event) {
+                //   App.handleClick(event);
+                // });
+
+            })(window, document);
+        </script>
+    </body>
+</html>

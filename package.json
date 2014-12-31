@@ -1,0 +1,7 @@
+{
+  "name": "a11yclick",
+  "description": "Easily handle keyboard click events on non semantic button elements.",
+  "version": "0.0.1",
+  "devDependencies": {},
+  "scripts": {}
+}
