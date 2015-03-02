@@ -13,10 +13,8 @@ var a11yclick = function(event) {
     if (type === 'click') {
         return true;
     } else if (type === 'keydown') {
-        if(code === 32){
-        	event.preventDefault();
-        }
         if (code === 32 || code === 13) {
+            event.preventDefault();
             return true;
         }
     } else {
