@@ -40,3 +40,7 @@ $('#fake-button').on('click keydown', function(event) {
 * Firefox 4+
 * Safari 5+
 * Internet Explorer 7+
+
+## License
+
+This project and its source code is licensed under the [MIT](LICENSE.txt) license.
